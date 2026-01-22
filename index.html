@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Table</title>
+
+    <!-- Table and form styling -->
+    <style>
+        table {
+            border: 2px solid #333;
+            border-collapse: collapse;
+            width: 70%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #000;
+            font-size: 17px;
+        }
+
+        .form-section {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        button {
+            padding: 8px 16px;
+            font-size: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Details Table</h2>
+
+    <!-- Table -->
+    <table>
+        <tr>
+            <th>Roll Number</th>
+            <th>Name</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Sharayu</td>
+            <td>United Nations</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Siddhi</td>
+            <td>United Kindom</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Shrushti</td>
+            <td>Australia</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>Ajeshwaree</td>
+            <td>North Korea</td>
+        </tr>
+    </table>
+
+    <!-- Form elements -->
+    <div class="form-section">
+        <form>
+            <!-- Dropdown menu -->
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+            <br><br>
+
+            <!-- Checkbox -->
+            <label>
+                <input type="checkbox" name="confirm" value="yes">
+                I confirm the above details are correct
+            </label>
+            <br><br>
+
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
